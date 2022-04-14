@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Ảnh đẹp Sri Lanka</title> 
+    <meta name="description" content="Thư viện ảnh du lịch Sri Lanka">
+    <meta name="keywords" content="sri lanka, đảo sri lanka, đi đâu ở sri lanka, làm gì ở sri lanka, ăn gì ở sri lanka, du lịch sri lanka, phượt sri lanka, du hành sri lanka, hành trình sri lanka, sri lanka surfing, món ăn sri lanka, cà ri sri lanka, tour sri lanka, Nuwara Eliya, Sigiriya, Polonnaruwa, Kandy, Đền Sri Dalada Maligawa, Đền Koneswaram, bãi biển, đồi chè, đỉnh Adam, tượng Phật trắng, làng quê sri lanka">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style-srilanka.css" > 
+
+</head>
+
+<body>
+
+<!--------------------- Pluggin facebook--------------------->
+    
+<div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0" nonce="rnxV7V1b"></script>
+
+<!--------------------- Menu--------------------->
+
+<nav>
+  <ul class="menu">
+      <li><a href="index.html"><img src="images/sri-lanka-flag.jpg" alt="Sri Lanka flag"></a></li>
+      <li><a href="index.html">Điểm đến</a></li>
+      <li><a href="religion.html">Tôn giáo</a></li>
+      <li><a href="food.html">Ẩm thực</a></li>
+      <li><a href="gallery.html">Ảnh đẹp</a></li>    
+  </ul>
+  </nav>
+
+<!---------------------Social media buttons--------------------->
+
+<div class="social">
+    <a href="https://www.facebook.com/Budgeteers/" class="fa fa-facebook" target="_blank"></a>
+    <a href="https://www.youtube.com/channel/UCckFCPnDSf9mMCkdEq7tTcQ" class="fa fa-youtube" target="_blank"></a>
+    <a href="https://www.instagram.com/accounts/login/?next=/thebudgeteers/" class="fa fa-instagram" target="_blank"></a>
+</div>
+
+
+<!---------------------Image slideshow---------------------
+    Phần này copy và chỉnh sửa từ w3schools.com--------->
+
+
+<section class="gallery">
+    
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">          
+          <img src="images/slide1.jpg" alt="Bãi biển">          
+        </div>
+        
+        <div class="mySlides fade">          
+            <img src="images/slide2.jpg" alt="Chụp ảnh trên bãi biển">          
+          </div>
+
+          <div class="mySlides fade">          
+            <img src="images/slide3.jpg" alt="Đồi chè">          
+          </div>
+
+          <div class="mySlides fade">          
+            <img src="images/slide4.jpg" alt="Hoàng hôn ở làng quê">          
+          </div>
+
+          <div class="mySlides fade">          
+            <img src="images/slide5.jpg" alt="Đỉnh Adam">          
+          </div>
+
+          <div class="mySlides fade">          
+            <img src="images/slide6.jpg" alt="Tượng Phật trắng">          
+          </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div class="dot-nav">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span> 
+          <span class="dot" onclick="currentSlide(6)"></span> 
+        </div>
+        
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+           
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            } 
+        
+        </script>
+
+</section>    
+
+<!---------------------Footer--------------------->
+
+<footer>
+    <div class="footer">
+        <div class="follow">
+          <p>Đừng quên theo dõi kênh:</p>
+            <div class="fb-page" data-href="https://www.facebook.com/Budgeteers/" data-tabs="timeline" data-width="230" data-height="50" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/Budgeteers/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Budgeteers/">The Budgeteers</a></blockquote></div>
+        </div>
+    </div>
+    </div>
+
+</footer>
+
+</body>
+</html>
